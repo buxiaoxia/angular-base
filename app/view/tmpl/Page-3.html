@@ -1,5 +1,15 @@
 <div>
      <div>
-         <h1>Page 3 content goes here...</h1>
+         <h2>Info angular-base</h2>
      </div>
+     <div ng-controller="gitHubRepoDetailCtrl">
+        <!--<span class="btn btn-default  btn-lg" ng-click="getGitHubRepoDetail();">get info</span>-->
+        <div>
+            <h4><span class="glyphicon glyphicon-user" /> {{repo.name}}</h4>
+            <h4><span class="glyphicon glyphicon-envelope" /> {{repo.owner.login}} </h4>
+            <h4>{{repo.git_url}} </h4>
+            <h4>{{repo.clone_url}} </h4>
+            <h4><a ng-href="{{repo.html_url}}">{{repo.html_url}}</a></h4>
+        </div>
+    </div>
 </div>

@@ -1,5 +1,18 @@
-<div>
-     <div>
-         <h1>Page 1 content goes here...</h1>
-     </div>
+<div ng-controller="githubUserCtrl">
+    <div>
+        <h2>Get Github User Info</h2>
+        <!--<span class="btn btn-default  btn-lg" ng-click="getGitHubUser();" style="margin-bottom:10px">get info</span>-->
+    </div>
+    <div>
+        <div class="col-md-3">
+            <img ng-src="{{user.avatar_url}}" class="img-rounded">
+        </div>
+        <div class="col-md-3">
+           <h4><span class="glyphicon glyphicon-user" /> {{user.name}}</h4>
+           <h4><span class="glyphicon glyphicon-envelope" />
+                <a ng-href="mailto:{{user.email}}">{{user.email}}</a>
+            </h4>
+            <h4><a ng-href="{{user.html_url}}">{{user.html_url}}</a></h4>
+        </div>
+    </div>
 </div>

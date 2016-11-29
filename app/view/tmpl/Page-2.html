@@ -1,5 +1,24 @@
 <div>
-     <div>
-         <h1>Page 2 content goes here...</h1>
-     </div>
+    <div>
+        <h2>GitHub Repos</h2>
+    </div>
+    <div ng-controller="githubUserReposCtrl">
+        <!--<span class="btn btn-default btn-lg" ng-click="getGitHubUserRepos();" style="margin-bottom:20px">get repos</span>-->
+        <div class="table-responsive">
+            <table class="table table-hover table-striped">
+                <th>name</th>
+                <th>language</th>
+                <th>html_url</th>
+                <th>git_url</th>
+                <th>clone_url</th>
+                <tr ng-repeat="repo in repos.repos">
+                    <td class="active">{{repo.name}}</td>
+                    <td class="info">{{repo.language}}</td>
+                    <td class="warning">{{repo.html_url}}</td>
+                    <td class="danger">{{repo.git_url}}</td>
+                    <td class="info">{{repo.clone_url}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </div>

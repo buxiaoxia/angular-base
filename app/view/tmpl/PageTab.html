@@ -1,10 +1,11 @@
 <div>
-     <div>
-         <span style="width:100px" ui-sref=".Page1"><a href="">Page-1</a></span>
-         <span style="width:100px" ui-sref=".Page2"><a href="">Page-2</a></span>
-         <span style="width:100px" ui-sref=".Page3"><a href="">Page-3</a></span>
-     </div>
-      <div>
-          <div ui-view=""/>
-     </div>
+    <div class="row">
+        <div class="col-md-3"><span class="btn btn-primary nav_demo" ui-sref=".Page1">User buxiaoxia</span></div>
+        <div class="col-md-3"><span class="btn btn-primary nav_demo" ui-sref=".Page2">GitHub Repos</span></div>
+        <div class="col-md-3"><span class="btn btn-primary nav_demo" ui-sref=".Page3">Info angular-base</span></div>
+        <div class="col-md-3"><span class="btn btn-primary nav_demo" ui-sref=".Page4">GitHub RESTFUL API</span></div>
+    </div>
+    <div>
+        <div ui-view="" />
+    </div>
 </div>

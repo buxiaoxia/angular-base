@@ -3,5 +3,24 @@
     padding: 0;
 }
 
+.nav_demo{
+    margin-bottom:5px;
+    width:200px;
+}
+
+table {
+    border: 1px solid #111111;   
+    border-collapse: collapse;   
+    block-size: 1px;
+}
+
+table.th,table.tr{
+     border-width: 1px;
+     border-color: #666666;
+}
+
+th {
+    text-align: center;
+}
 
 
