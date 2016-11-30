@@ -5,3 +5,6 @@
 
 ### 11.29更新
 增加从GitHub个人主页获取基本信息，并且增加controller，service基础demo
+
+### 11.30更新
+增加gulp构建
