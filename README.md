@@ -1,5 +1,17 @@
 # angular-base
 ## angularJS 的种子项目，后续更新
+
+git clone https://github.com/buxiaoxia/angular-base.git
+
+cd angular-base
+
+### 初始化
+npm install
+
+bower install
+### 启动
+npm start
+## 更新说明
 ### 11.28更新
 初始版本，基础内容添加
 
